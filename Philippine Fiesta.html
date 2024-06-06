@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Philippine Fiesta Delights</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('file:///C:/Users/Nicole%20Tuballas/Desktop/midterm%20proj%20(prog2)/fiestasbg.png');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #343a40;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+        }
+
+        .jumbotron {
+            background: linear-gradient(to right, #0033a0, #f40430);
+            color: #ffce00;
+            padding: 2rem;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s;
+        }
+
+        .jumbotron h1 {
+            color: #ffce00;
+            animation: bounceIn 2s;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .lead {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        #festivalsSection {
+            margin-top: 30px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            border: 1px solid #0033a0;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .card-header {
+            background: linear-gradient(to right, #0033a0, #d51c3d);
+            border-radius: 10px 10px 0 0;
+        }
+
+        .btn-link {
+            color: #ffce00;
+        }
+
+        .card-body {
+            background-color: #fff;
+            border-radius: 0 0 10px 10px;
+        }
+
+        footer {
+            background: #a5a6a6;
+            color: #000;
+            text-align: center;
+            padding: 2rem;
+            border-radius: 30px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.3);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            70% {
+                transform: scale(0.9);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .modal-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-body img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .btn-primary {
+            background-color: #0033a0;
+            border-color: #0033a0;
+        }
+
+        .btn-primary:hover {
+            background-color: #002275;
+            border-color: #002275;
+        }
+    </style>
+    <style>
+        body {
+            background-image: url('fiestasbg.png');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Philippine Fiesta Delights:
+                "A Kaleidoscope of Culture and Celebration"</b></h1>
+    </div>
+
+    <div class="container">
+        <p class="lead">In the heart of the Philippines, a country known for its warm hospitality and vibrant culture,
+            an array of festivals unfolds, each offering a unique celebration of tradition, heritage, and community
+            spirit. From the bustling streets of urban centers to the quiet corners of rural villages, these festivals
+            weave a colorful tapestry that reflects the diverse influences that have shaped the nation.</p>
+
+        <p class="lead">Steeped in history, many festivals find their roots in religious traditions brought by Spanish
+            colonization, while others celebrate the bountiful harvests of the archipelago's fertile lands. Whether it's
+            the rhythmic beat of drums in a lively street parade or the intricate displays of creativity adorning
+            houses, each festival carries a distinct charm, inviting participants and spectators alike to immerse themselves in the
+            sights, sounds, and flavors of Filipino culture.</p>
+
+        <p class="lead">As we explore the festivals of the Philippines, we embark on a journey through time and
+            tradition, where communities come together to celebrate their unique identities, express gratitude for
+            blessings, and share the joy that defines the Filipino spirit. Join us in this introduction to the lively
+            and captivating world of Philippine festivals, where each celebration tells a story of resilience,
+            diversity, and the enduring
+            spirit of camaraderie.</p>
+    </div>
+
+    <div id="festivalsSection">
+        <h2>Well-Known Festivals in the Philippines:</h2>
+
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="sinulogHeading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#sinulogCollapse"
+                            aria-expanded="true" aria-controls="sinulogCollapse">
+                            Sinulog Festival (Cebu City):
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="sinulogCollapse" class="collapse show" aria-labelledby="sinulogHeading"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                        <p>The Sinulog Festival, rooted in the early 1980s, <b>embodies Cebu's rich cultural and
+                                religious history</b>. <b>Celebrated on the third Sunday of January,</b> this festival
+                            is <b>a vibrant tribute to the Santo Niño, showcasing Cebu's profound devotion to Christianity.
+                            </b> The grand celebration involves a spirited street parade featuring rhythmic dances, vibrant costumes,
+                            and religious processions, where pilgrims and locals joyfully partake in the iconic Sinulog dance,
+                            expressing their deep faith and devotion.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="atiAtihanHeading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#atiAtihanCollapse"
+                            aria-expanded="false" aria-controls="atiAtihanCollapse">
+                            Ati-Atihan Festival (Kalibo, Aklan):
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="atiAtihanCollapse" class="collapse" aria-labelledby="atiAtihanHeading"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                        <p>The Ati-Atihan Festival, <b>celebrated every January in Kalibo, Aklan,</b> is a vibrant
+                            celebration that traces its roots to pre-colonial times. Known as the "Mother of All Philippine
+                            Festivals," it honors the Santo Niño while paying homage to the indigenous Ati people. The
+                            festival features colorful tribal dances, elaborate costumes, and rhythmic drumbeats that fill
+                            the streets, creating an atmosphere of unity and joy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="pahiyasHeading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#pahiyasCollapse"
+                            aria-expanded="false" aria-controls="pahiyasCollapse">
+                            Pahiyas Festival (Lucban, Quezon):
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="pahiyasCollapse" class="collapse" aria-labelledby="pahiyasHeading" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>The Pahiyas Festival, <b>celebrated on May 15th in Lucban, Quezon,</b> is a vibrant
+                            celebration that showcases the region's agricultural bounty. Homes are adorned with colorful
+                            displays of fruits, vegetables, and rice stalks, creating a picturesque and festive atmosphere.
+                            The festival is a thanksgiving event honoring San Isidro Labrador, the patron saint of farmers,
+                            for a bountiful harvest. It features street dancing, music, and the unique Kiping decorations
+                            made from rice dough.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="panagbengaHeading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#panagbengaCollapse"
+                            aria-expanded="false" aria-controls="panagbengaCollapse">
+                            Panagbenga Festival (Baguio City):
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="panagbengaCollapse" class="collapse" aria-labelledby="panagbengaHeading"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                        <p>The Panagbenga Festival, <b>held every February in Baguio City,</b> is a grand celebration of
+                            the region's floral bounty and cultural heritage. Also known as the Flower Festival, it features
+                            stunning floral floats, street dancing, and various cultural events. The festival showcases the
+                            creativity and vibrant spirit of the people, attracting visitors from all over the country and
+                            beyond to witness the breathtaking displays of flowers and artistry.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="kadayawanHeading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#kadayawanCollapse"
+                            aria-expanded="false" aria-controls="kadayawanCollapse">
+                            Kadayawan Festival (Davao City):
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="kadayawanCollapse" class="collapse" aria-labelledby="kadayawanHeading"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                        <p>The Kadayawan Festival, <b>celebrated every August in Davao City,</b> is a vibrant thanksgiving
+                            festival that honors the city's rich cultural heritage and natural bounty. The festival features
+                            colorful street parades, traditional dances, and showcases the region's abundant harvests,
+                            including exotic fruits, flowers, and agricultural products. It is a time of unity and
+                            celebration, highlighting the diverse cultures and traditions of the people of Davao.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="dinagyangHeading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#dinagyangCollapse"
+                            aria-expanded="false" aria-controls="dinagyangCollapse">
+                            Dinagyang Festival (Iloilo City):
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="dinagyangCollapse" class="collapse" aria-labelledby="dinagyangHeading"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                        <p>The Dinagyang Festival, <b>held every January in Iloilo City,</b> is a grand celebration
+                            honoring the Santo Niño and commemorating the arrival of Malay settlers in Panay. The festival
+                            features vibrant street performances, elaborate costumes, and rhythmic drumbeats that fill the
+                            streets with energy and excitement. It is a showcase of Iloilo's rich cultural heritage and the
+                            unwavering devotion of its people.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="masskaraHeading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#masskaraCollapse"
+                            aria-expanded="false" aria-controls="masskaraCollapse">
+                            MassKara Festival (Bacolod City):
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="masskaraCollapse" class="collapse" aria-labelledby="masskaraHeading" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>The MassKara Festival, <b>celebrated every October in Bacolod City,</b> is a colorful and
+                            lively festival known for its vibrant masks and costumes. The festival was born out of the
+                            city's resilience during challenging times and is a celebration of the Negrenses' indomitable
+                            spirit. It features street dancing, music, and a grand parade, where participants don
+                            intricately designed masks adorned with bright colors and smiling faces, symbolizing the
+                            city's moniker as the "City of Smiles."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="pintadosHeading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#pintadosCollapse"
+                            aria-expanded="false" aria-controls="pintadosCollapse">
+                            Pintados-Kasadyaan Festival (Tacloban City):
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="pintadosCollapse" class="collapse" aria-labelledby="pintadosHeading"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                        <p>The Pintados-Kasadyaan Festival, <b>celebrated every June in Tacloban City,</b> is a
+                            vibrant
+                            celebration that combines two distinct festivals. The Pintados Festival pays homage to the
+                            ancient
+                            tradition of body-painting among the native warriors, while the Kasadyaan Festival is a
+                            celebration of
+                            the region's rich cultural heritage and bountiful harvests. Together, they create a colorful
+                            and
+                            lively event featuring street parades, traditional dances, and cultural performances.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Philippine Fiesta Delights. All rights reserved. This web page was created as part of a project to
+            showcase the rich cultural heritage of the Philippines. Join us in celebrating the vibrant festivals that
+            bring communities together and keep traditions alive.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
